@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <h1>"Rock, Paper, Scissors" Game!</h1>
+    <h1 id="instructions">Press the "Sign In" button to start!</h1>
+    <div id="primary">
+        <button type="button" id="btn-sign-in">
+            Sign In
+        </button>
+        <p id="info">You are not logged in.</p>
+        <p id="player-status">Players not ready.</p>
+        <div id="wins">Wins: 0</div>
+        <div id="losses">Losses: 0</div>
+        <div id="ties">Ties: 0</div>
+        <div id="choice-1">Player 1: no throw selected.</div>
+        <div id="choice-2">Player 2: no throw selected.</div>
+        <form onSubmit="return false">
+            <div class="form-group">
+                <label for="chat-input">Chat:</label>
+                <input type="text" class="form-control" id="chat-input" placeholder="Enter Message">
+            </div>
+            <button type="button" id="btn-chat">
+                Send Message to Opponent
+            </button>
+            <!--
+            <button type="button" id="btn-reset">
+                Reset
+            </button>
+            -->
+        </form>
+        <div>Player 1 writes:</div>
+        <div id="chat-1"></div>
+        <div>Player 2 writes:</div>
+        <div id="chat-2"></div>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+  </body>
+</html>

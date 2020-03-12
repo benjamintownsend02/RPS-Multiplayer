@@ -1,0 +1,32 @@
+body{
+    background-image: url(../images/rps_tall.png);
+    background-size: 100%;
+    text-align: center;
+}
+
+h1{
+    font-size: 150%;
+}
+
+#primary{
+    text-align: left;
+    background-color: rgb(211, 211, 211);
+    color: black;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    height: auto;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+  }
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
+  }
+  
